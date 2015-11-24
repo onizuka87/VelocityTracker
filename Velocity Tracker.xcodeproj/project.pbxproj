@@ -14,6 +14,7 @@
 		9ABC8B0E1BFB8A14004D68F0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9ABC8B0D1BFB8A14004D68F0 /* Assets.xcassets */; };
 		9ABC8B111BFB8A14004D68F0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9ABC8B0F1BFB8A14004D68F0 /* LaunchScreen.storyboard */; };
 		9ABC8B1C1BFB8A14004D68F0 /* Velocity_TrackerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9ABC8B1B1BFB8A14004D68F0 /* Velocity_TrackerTests.m */; };
+		9ABC8B271BFB9472004D68F0 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9ABC8B261BFB9472004D68F0 /* MapKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,7 @@
 		9ABC8B171BFB8A14004D68F0 /* Velocity TrackerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Velocity TrackerTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9ABC8B1B1BFB8A14004D68F0 /* Velocity_TrackerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Velocity_TrackerTests.m; sourceTree = "<group>"; };
 		9ABC8B1D1BFB8A14004D68F0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9ABC8B261BFB9472004D68F0 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +49,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9ABC8B271BFB9472004D68F0 /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +66,7 @@
 		9ABC8AF51BFB8A13004D68F0 = {
 			isa = PBXGroup;
 			children = (
+				9ABC8B261BFB9472004D68F0 /* MapKit.framework */,
 				9ABC8B001BFB8A14004D68F0 /* Velocity Tracker */,
 				9ABC8B1A1BFB8A14004D68F0 /* Velocity TrackerTests */,
 				9ABC8AFF1BFB8A14004D68F0 /* Products */,
@@ -160,6 +164,12 @@
 				TargetAttributes = {
 					9ABC8AFD1BFB8A14004D68F0 = {
 						CreatedOnToolsVersion = 7.0.1;
+						DevelopmentTeam = P9YCC78CYU;
+						SystemCapabilities = {
+							com.apple.Maps.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 					9ABC8B161BFB8A14004D68F0 = {
 						CreatedOnToolsVersion = 7.0.1;
@@ -339,6 +349,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = "Velocity Tracker/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.pietrosacco.Velocity-Tracker";
@@ -350,6 +361,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = "Velocity Tracker/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.pietrosacco.Velocity-Tracker";
@@ -400,6 +412,7 @@
 				9ABC8B221BFB8A14004D68F0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9ABC8B231BFB8A14004D68F0 /* Build configuration list for PBXNativeTarget "Velocity TrackerTests" */ = {
 			isa = XCConfigurationList;
@@ -408,6 +421,7 @@
 				9ABC8B251BFB8A14004D68F0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
